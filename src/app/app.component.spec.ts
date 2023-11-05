@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'sistemabancario'`, () => {
+  it(`should have as title 'angular-cajero-virtual'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('sistemabancario');
+    expect(app.title).toEqual('angular-cajero-virtual');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('sistemabancario app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('angular-cajero-virtual app is running!');
   });
 });
